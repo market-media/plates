@@ -1,0 +1,32 @@
+{
+  "name": "market-media/plates",
+  "description": "Plates, o sistema de templates nativo do PHP que é rápido, fácil de usar e fácil de estender.",
+  "license": "MIT",
+  "require": {
+    "php": "^8.5"
+  },
+  "require-dev": {
+    "mikey179/vfsstream": "^v1.6.12",
+    "phpunit/phpunit": "^11.5.54",
+    "squizlabs/php_codesniffer": "^3.13.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "MarketMedia\\Plates\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "MarketMedia\\Plates\\Tests\\": "tests"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "3.0-dev"
+    }
+  },
+  "scripts": {
+    "test": "@php -d error_reporting=-1 vendor/phpunit/phpunit/phpunit --testdox --colors=always",
+    "docs": "hugo -s doc server"
+  }
+}

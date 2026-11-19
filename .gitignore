@@ -1,0 +1,8 @@
+build
+/vendor
+/doc/public
+/doc/data/versions.json
+/doc/.hugo_build.lock
+.generated
+.phpunit.result.cache
+.phpunit.cache
